@@ -3,6 +3,9 @@
   align-items: center;
   height: 6rem;
 }
+.header-parent{
+  height: 6rem;
+}
 .header-container img {
   width: 100px;
   height: 150px;
