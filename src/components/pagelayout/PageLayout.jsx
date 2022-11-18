@@ -1,8 +1,8 @@
 import { Header } from "../header/Header"
-
+import "../../styles.css"
 export const PageLayout = () =>{
     return(
-        <div>
+        <div className="page-layout">
             <Header/>
         </div>
     )
