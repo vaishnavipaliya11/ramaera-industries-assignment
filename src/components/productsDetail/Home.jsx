@@ -1,9 +1,9 @@
 import { projectData } from "../../data/projectData";
-import { DetailCard } from "./DetailCard";
-import "../productsDetail/detailCard.css";
+import { ProductCard } from "./ProductCard";
+import "../productsDetail/card.css";
 import { Header } from "../header/Header";
 import { Sidebar } from "../sidebar/Sidebar";
-export const DetailsContainer = () => {
+export const Home = () => {
   return (
     <>
       <div className="page-layout">
@@ -26,7 +26,7 @@ export const DetailsContainer = () => {
               {projectData.map((data) => {
                 return (
                   <div>
-                    <DetailCard data={data} />
+                    <ProductCard data={data} />
                   </div>
                 );
               })}

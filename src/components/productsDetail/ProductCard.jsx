@@ -1,5 +1,5 @@
-import "../productsDetail/detailCard.css";
-export const DetailCard = ({ data }) => {
+import "../productsDetail/card.css";
+export const ProductCard = ({ data }) => {
   console.log("card", data);
   return (
     <table className="card-container">

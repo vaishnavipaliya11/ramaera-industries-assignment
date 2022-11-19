@@ -15,4 +15,5 @@ body{
     grid-auto-columns: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
     margin-top: 1rem;
+    gap: 3rem;
 }

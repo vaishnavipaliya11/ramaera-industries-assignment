@@ -24,7 +24,7 @@
 .projectData-mapped-container {
   border: 1px solid var(--text-clr);
   border-radius: 20px;
-  width: 1152px;
+  width: 1000px;
   height: 1029px;
   overflow: scroll;
   margin: 1rem;
