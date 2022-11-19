@@ -1,3 +1,12 @@
 .sidebar-mapped-items{
     padding: 0.5rem;
 }
+.sidebar-mapped-items img {
+    padding: 0.5rem;
+}
+.sidebar-mapped-items span{
+    min-width: 90px;
+}
+.sidebar-container{
+    align-items: flex-start;
+}

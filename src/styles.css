@@ -13,5 +13,5 @@ body{
     display: grid;
     grid-auto-columns: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
-    margin: 2rem;
+    margin-top: 1rem;
 }
