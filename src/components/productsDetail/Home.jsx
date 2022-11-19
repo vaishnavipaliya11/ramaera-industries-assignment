@@ -18,7 +18,7 @@ export const Home = () => {
               <div className="common-flex-row detail-heading">
                 <span>Project</span>
                 <label>
-                  <img src="/assets/projects.svg" />
+                  <img src="/assets/projects.svg" alt="projects-icon"/>
                 </label>
               </div>
 

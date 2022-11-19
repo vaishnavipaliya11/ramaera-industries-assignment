@@ -46,10 +46,10 @@ export const ProjectInfoPage = () => {
                 <img src="/assets/spices.png"  className="spice-img" />
                 <div className="common-flex-row number-of-user">
                   <div className="pd-sm">
-                    <img src="/assets/peopleThree.svg" className="people-img" />
+                    <img src="/assets/peopleThree.svg" alt="user-icon" className="people-img" />
 
-                    <img src="/assets/peopleTwo.svg" className="people-img" />
-                    <img src="/assets/peopleOne.svg" className="people-img" />
+                    <img src="/assets/peopleTwo.svg" alt="user-icon"  className="people-img" />
+                    <img src="/assets/peopleOne.svg" alt="user-icon" className="people-img"  />
                   </div>
 
                   <div className="common-flex-col subscribers">
