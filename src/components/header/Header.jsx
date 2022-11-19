@@ -1,9 +1,10 @@
 import { AiOutlineBell } from "react-icons/ai";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { FaBars } from "react-icons/fa";
 import "../header/header.css";
 import "../../utils.css";
 import "../../styles.css";
-export const Header = () => {
+export const Header = ({ setShowSidebar }) => {
   return (
     <>
       <div className="header-container common-flex-row">
@@ -22,11 +23,13 @@ export const Header = () => {
           <span className="header-icons">
             <IoMdArrowDropdown />
           </span>
+          <span className="menu-bar" onClick={() => setShowSidebar(prevState => !prevState)}>
+            <FaBars />
+          </span>
         </div>
       </div>
-      
-        <div className="header-line"></div>
-     
+
+      <div className="header-line"></div>
     </>
   );
 };

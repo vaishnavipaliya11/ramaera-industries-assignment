@@ -1,5 +1,7 @@
 .sidebar-mapped-items{
     padding: 0.5rem;
+    text-decoration: none;
+    color: var(--txt-color);
 }
 .sidebar-mapped-items img {
     padding: 0.5rem;

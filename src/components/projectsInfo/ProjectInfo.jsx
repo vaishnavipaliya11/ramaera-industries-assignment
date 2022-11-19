@@ -1,16 +1,27 @@
 import { Header } from "../header/Header";
 import { Sidebar } from "../sidebar/Sidebar";
 import "../../components/projectsInfo/projectInfo.css";
+import { useRef, useState } from "react";
+import { MobileSidebar } from "../mobileSidebar/MobileSidebar";
+import { useDetectClickOutside } from "../../hooks/useDetectClickOutside";
 export const ProjectInfoPage = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const sidebarRef = useRef(null);
+
+  useDetectClickOutside(sidebarRef, () => setShowSidebar(false));
   return (
     <>
       <div className="page-layout">
         <Header />
         <div className="sub-layout">
           <div className="sidebar-wrapper">
-          <Sidebar />
+            <Sidebar />
           </div>
-          
+          <MobileSidebar
+            showSidebar={showSidebar}
+            setShowSidebar={setShowSidebar}
+            ref={sidebarRef}
+          />
           <div className="product-info-container">
             <div className="common-flex-col">
               <div className="common-flex-row detail-heading">
@@ -19,37 +30,32 @@ export const ProjectInfoPage = () => {
 
               <div className="details-line"></div>
             </div>
-            <div>
-
-            </div>
+            <div></div>
             <div className="product-info-block common-flex-row">
               <div>
                 <p className="pd-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Eveniet autem veniam in quam alias corrupti consequatur ut
-                  reiciendis numquam. Cumque a illo temporibus! Quasi fugiat
-                  repudiandae facilis molestiae, corrupti cum. Lorem ipsum dolor
-                  sit amet consectetur, adipisicing elit. Eveniet autem veniam
-                  in quam alias corrupti consequatur ut reiciendis numquam.
-                  Cumque a illo temporibus! Quasi fugiat repudiandae facilis
-                  molestiae, corrupti cum. Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Eveniet autem veniam in quam
-                  alias corrupti consequatur ut reiciendis numquam. Cumque a
-                  illo temporibus! Quasi fugiat repudiandae facilis molestiae,
-                  corrupti cum. Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Eveniet autem veniam in quam alias corrupti
-                  consequatur ut reiciendis numquam. Cumque a illo temporibus!
-                  Quasi fugiat repudiandae facilis molestiae, corrupti cum.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet autem veniam in
+                  quam alias corrupti consequatur ut reiciendis numquam. Cumque a illo temporibus!
+                  Quasi fugiat repudiandae facilis molestiae, corrupti cum. Lorem ipsum dolor sit
+                  amet consectetur, adipisicing elit. Eveniet autem veniam in quam alias corrupti
+                  consequatur ut reiciendis numquam. Cumque a illo temporibus! Quasi fugiat
+                  repudiandae facilis molestiae, corrupti cum. Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Eveniet autem veniam in quam alias corrupti
+                  consequatur ut reiciendis numquam. Cumque a illo temporibus! Quasi fugiat
+                  repudiandae facilis molestiae, corrupti cum. Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Eveniet autem veniam in quam alias corrupti
+                  consequatur ut reiciendis numquam. Cumque a illo temporibus! Quasi fugiat
+                  repudiandae facilis molestiae, corrupti cum.
                 </p>
               </div>
               <div className="common-flex-col user-block">
-                <img src="/assets/spices.png"  className="spice-img" />
+                <img src="/assets/spices.png" className="spice-img" />
                 <div className="common-flex-row number-of-user">
                   <div className="pd-sm">
                     <img src="/assets/peopleThree.svg" alt="user-icon" className="people-img" />
 
-                    <img src="/assets/peopleTwo.svg" alt="user-icon"  className="people-img" />
-                    <img src="/assets/peopleOne.svg" alt="user-icon" className="people-img"  />
+                    <img src="/assets/peopleTwo.svg" alt="user-icon" className="people-img" />
+                    <img src="/assets/peopleOne.svg" alt="user-icon" className="people-img" />
                   </div>
 
                   <div className="common-flex-col subscribers">
@@ -69,9 +75,7 @@ export const ProjectInfoPage = () => {
                 </div>
 
                 <div className="progress-bar">
-                  <div className="completed-progress">
-
-                  </div>
+                  <div className="completed-progress"></div>
                 </div>
               </div>
               <button className="pd-sm place-btn">Place bid</button>

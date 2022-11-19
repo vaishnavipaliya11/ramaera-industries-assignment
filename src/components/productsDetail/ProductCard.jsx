@@ -4,7 +4,7 @@ export const ProductCard = ({ data }) => {
     <table className="card-container">
       <div>
         <div className="common-flex-row icon-name-container">
-          <img src={data?.icon} alt="card-icons" />
+          {data?.icon ? <img src={data?.icon} alt="card-icons" /> : null}
           <span>{data?.name}</span>
         </div>
       </div>

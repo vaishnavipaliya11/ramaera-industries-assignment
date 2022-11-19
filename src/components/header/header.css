@@ -36,3 +36,15 @@
   margin-right: 2rem;
   justify-content: space-around;
 }
+.menu-bar{
+  display: none;
+  color: var(--text-clr);
+  margin-left: 1rem;
+}
+
+@media screen and (max-width:700px) {
+   .menu-bar{
+    display: block;
+
+   } 
+}

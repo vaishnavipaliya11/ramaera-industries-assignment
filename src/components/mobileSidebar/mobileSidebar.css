@@ -1,8 +1,13 @@
-.mobile-sidebar-wrapper{
+.mobile-sidebar-wrapper {
     position: fixed;
-    top:0;
+    top: 0;
     bottom: 0;
-    left: -100;
+    left: -100rem;
+    background: linear-gradient(90deg, #141e30 0%, #243b55 100%);
+    z-index: 10;
+    transition: all ease 0.3s;
 }
 
-.mobi
+.mobile-sidebar-wrapper--open {
+    left: 0;
+}
