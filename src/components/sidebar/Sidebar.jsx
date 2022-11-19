@@ -1,32 +1,17 @@
-import "../sidebar/sidebar.css"
-import "../../utils.css"
+import "../sidebar/sidebar.css";
+import "../../utils.css";
+import {useNavigate} from "react-router-dom"
+import { sideBarData } from "../../data/projectData";
 export const Sidebar = () => {
-  const sideBarData = [
-    { name: "Profile", icon: "/assets/user.svg", dropDown:"" },
-    {
-      name: "Projects",
-      icon: "/assets/projects.svg",
-      dropDown:"/assets/drop.svg"
-    },
-    {
-      name: "Finance",
-      icon: "/assets/finance.svg",
-      dropDown:"/assets/drop.svg"
-    },
-    {
-      name: "Support",
-      icon: "/assets/info.svg",
-      dropDown:"/assets/drop.svg"
-    },
-  ];
+  const navigate=useNavigate()
   return (
     <div className="sidebar-container common-flex-col">
       {sideBarData.map((item) => {
         return (
           <div className="common-flex-row center sidebar-mapped-items">
-            <img src={item.icon} alt="item-icon" className="pd-sm"/>
-            <span className="pd-sm">{item.name}</span>
-            <img src={item?.dropDown}  className="pd-sm"/>
+            <img src={item.icon} alt="item-icon" className="pd-sm" />
+            <span className="pd-sm" onClick={()=> navigate(`${item.name}`)}>{item.name}</span>
+            <img src={item?.dropDown} className="pd-sm" />
           </div>
         );
       })}

@@ -9,8 +9,11 @@ export const Home = () => {
       <div className="page-layout">
         <Header />
         <div className="sub-layout">
+        <div className="sidebar-wrapper">
           <Sidebar />
-          <div className="common-flex-col">
+          </div>
+        
+          <div className="common-flex-col home-container">
             <div className="common-flex-col">
               <div className="common-flex-row detail-heading">
                 <span>Project</span>

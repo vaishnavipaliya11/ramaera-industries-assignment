@@ -1,4 +1,24 @@
 import { v4 as uuid } from "uuid";
+export const sideBarData = [
+  { name: "Profile", icon: "/assets/user.svg", dropDown:"" },
+  {
+    name: "Projects",
+    icon: "/assets/projects.svg",
+    dropDown:"/assets/drop.svg"
+  },
+  {
+    name: "Finance",
+    icon: "/assets/finance.svg",
+    dropDown:"/assets/drop.svg"
+  },
+  {
+    name: "Support",
+    icon: "/assets/info.svg",
+    dropDown:"/assets/drop.svg"
+  },
+];
+
+
 export const projectData = [
   {
     id: uuid(),
