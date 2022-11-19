@@ -4,27 +4,21 @@
 }
 
 .product-info-block p {
-  width: 32rem;
-  height: 26.25rem;
+  max-width: 32rem;
   margin: 1rem;
   text-align: left;
 }
 #spice-img {
-  width: 18rem;
+  width: 18vw;
 }
 .people-img {
   margin: -0.3rem;
   width: 50px;
 }
-/* .people-img:nth-child(1){
-    z-index: 3;
+.product-info-container {
+  max-width: 80%;
+  margin: auto;
 }
-.people-img:nth-child(2){
-    z-index: 2;
-}
-.people-img:nth-child(3){
-    z-index: 1;
-} */
 .number-of-user {
   margin: 0.5rem;
   justify-content: space-around;
@@ -34,8 +28,50 @@
 }
 .subscribers {
   align-items: flex-start;
-  margin: 0.2rem;padding: 0.5rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
 }
 .subscribers span {
   padding: 0.2rem;
+}
+
+.loss-compare-line {
+  border: 1px solid var(--text-clr);
+  background-color: var(--text-clr);
+  width: 250px;
+  height: 1px;
+}
+
+.project-progress-container {
+  border: 1px solid var(--text-clr);
+  align-items: center;
+  padding: 0.5rem;
+  width: 30rem;
+  border-radius: 10px;
+  margin: auto;
+}
+.project-progress-container span {
+  font-size: 16px;
+}
+.progress-bar {
+  min-width: 80%;
+  min-height: 8px;
+  border-radius: 71.5px;
+  background-color: var(--text-clr);
+}
+.completed-progress {
+  width: 80%;
+  height: 8px;
+  border-radius: 71.5px;
+  background: linear-gradient(90deg, #f9d423 0%, #e65c00 100%);
+}
+.place-btn {
+  background: linear-gradient(90deg, #f9d423 0%, #e65c00 100%);
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  color: var(--text-clr);
+  padding: 0.2rem 2rem;
+  width: 8rem;
+  margin: auto;
+  margin-top: 0.5rem;
 }

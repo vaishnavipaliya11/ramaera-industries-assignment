@@ -8,7 +8,6 @@ export const ProductCard = ({ data }) => {
           <span>{data?.name}</span>
         </div>
       </div>
-
       <div>
         <p>{data?.description}</p>
       </div>

@@ -16,6 +16,7 @@
 }
 .details-line {
     max-width: 7rem;
+    background-color: var(--text-clr);
   border-top: 1px solid var(--text-clr);
 }
 
@@ -25,8 +26,8 @@
   border: 1px solid var(--text-clr);
   border-radius: 20px;
   width: 1000px;
-  height: 1029px;
-  overflow: scroll;
+  height: 25rem;
+  overflow-y: scroll;
   margin: 1rem;
   padding-bottom: 5rem;
 }
@@ -53,6 +54,7 @@
   );
   border: 1px solid #ffffff;
   border-radius: 10px;
+  margin-right: -5rem;
 }
 .projectData-mapped-container::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, #f9d423 0%, #e65c00 100%);

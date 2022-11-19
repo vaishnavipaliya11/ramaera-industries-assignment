@@ -1,10 +1,12 @@
 .common-flex-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .common-flex-col{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .center{
     justify-content: center;

@@ -18,3 +18,15 @@
     gap: 3rem;
     color: var(--text-clr);
 }
+
+/* @media screen and (max-width:700px) {
+    .sidebar-wrapper{
+        display: none;
+    }
+    .product-info-container p{
+        width: 12rem;
+        margin: auto;
+        font-size: ;
+    }
+  
+} */

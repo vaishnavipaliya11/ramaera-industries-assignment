@@ -34,29 +34,5 @@ export const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a leo massa.",
     status: "Finished",
   },
-  {
-    id: uuid(),
-    name: "Hotels",
-    icon: "/assets/hotels.svg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a leo massa.",
-    status: "Active",
-    extra: "Bid",
-  },
-  {
-    id: uuid(),
-    name: "Technology",
-    icon: "/assets/tech.svg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a leo massa.",
-    status: "Upcoming",
-  },
-  {
-    id: uuid(),
-    name: "F mcg",
-    icon: "/assets/fmcg.svg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a leo massa.",
-    status: "Finished",
-  },
+  
 ];

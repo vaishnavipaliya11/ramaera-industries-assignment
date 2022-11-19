@@ -7,8 +7,11 @@ export const ProjectInfoPage = () => {
       <div className="page-layout">
         <Header />
         <div className="sub-layout">
+          <div className="sidebar-wrapper">
           <Sidebar />
-          <div>
+          </div>
+          
+          <div className="product-info-container">
             <div className="common-flex-col">
               <div className="common-flex-row detail-heading">
                 <span>Garam Masala</span>
@@ -54,8 +57,21 @@ export const ProjectInfoPage = () => {
               </div>
             </div>
 
-            <div>
-              <button>Place bid</button>
+            <div className="project-info-bottom-details common-flex-col">
+              <div className="common-flex-col pd-sm project-progress-container">
+                <div className="common-flex-row center">
+                  <span className="pd-sm">Total 1.5Cr</span>
+                  <div className="loss-compare-line "></div>
+                  <span className="pd-sm">Now 80 lac</span>
+                </div>
+
+                <div className="progress-bar">
+                  <div className="completed-progress">
+
+                  </div>
+                </div>
+              </div>
+              <button className="pd-sm place-btn">Place bid</button>
             </div>
           </div>
         </div>
