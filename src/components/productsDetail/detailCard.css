@@ -20,6 +20,7 @@
 }
 
 /* container */
+
 .projectData-mapped-container {
   border: 1px solid var(--text-clr);
   border-radius: 20px;
@@ -42,7 +43,7 @@
   width: 1.2rem;
   margin: 0.2rem;
 }
-/* .projectData-mapped-container::-webkit-scrollbar {
+.projectData-mapped-container::-webkit-scrollbar {
   width: 10px;
   height: 8px;
   background: linear-gradient(
@@ -56,4 +57,4 @@
 .projectData-mapped-container::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, #f9d423 0%, #e65c00 100%);
   border-radius: 8px;
-} */
+}

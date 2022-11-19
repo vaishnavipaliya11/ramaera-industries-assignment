@@ -1,10 +1,11 @@
 import './App.css';
 import { PageLayout } from './components/pagelayout/PageLayout';
+import { DetailsContainer } from './components/productsDetail/DetailsContainer';
 
 function App() {
   return (
     <div className="App">
-      <PageLayout/>
+      <DetailsContainer/>
     </div>
   );
 }
