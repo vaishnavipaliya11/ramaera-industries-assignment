@@ -19,6 +19,9 @@ export const ProjectInfoPage = () => {
 
               <div className="details-line"></div>
             </div>
+            <div>
+
+            </div>
             <div className="product-info-block common-flex-row">
               <div>
                 <p className="pd-sm">
@@ -39,8 +42,8 @@ export const ProjectInfoPage = () => {
                   Quasi fugiat repudiandae facilis molestiae, corrupti cum.
                 </p>
               </div>
-              <div className="common-flex-col">
-                <img src="/assets/spices.png" id="spice-img" />
+              <div className="common-flex-col user-block">
+                <img src="/assets/spices.png"  className="spice-img" />
                 <div className="common-flex-row number-of-user">
                   <div className="pd-sm">
                     <img src="/assets/peopleThree.svg" className="people-img" />
