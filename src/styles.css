@@ -8,6 +8,7 @@ body{
 .page-layout{
     background: linear-gradient(90deg, #141E30 0%, #243B55 100%);
     height: 100vh;
+    overflow: hidden;
 }
 .sub-layout{
     display: grid;
