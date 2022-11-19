@@ -1,6 +1,6 @@
 import { projectData } from "../../data/projectData";
 import { ProductCard } from "./ProductCard";
-import "../productsDetail/card.css";
+import "./card.css";
 import { Header } from "../header/Header";
 import { Sidebar } from "../sidebar/Sidebar";
 export const Home = () => {

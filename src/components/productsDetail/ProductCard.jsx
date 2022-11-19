@@ -1,6 +1,5 @@
-import "../productsDetail/card.css";
+import "./card.css";
 export const ProductCard = ({ data }) => {
-  console.log("card", data);
   return (
     <table className="card-container">
       <div>
